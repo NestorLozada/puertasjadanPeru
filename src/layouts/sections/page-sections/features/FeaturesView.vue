@@ -21,7 +21,7 @@ onMounted(() => {
 </script>
 <template>
   <BaseLayout
-    title="Features"
+    title="Pueta automática abtible RECORD"
     :breadcrumb="[
       { label: 'Page Sections', route: '/sections/page-sections/page-headers' },
       { label: 'Features' },

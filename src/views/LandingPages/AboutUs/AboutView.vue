@@ -15,7 +15,8 @@ import Typed from "typed.js";
 import Information from "./Sections/AboutInformation.vue";
 import AboutTeam from "./Sections/AboutTeam.vue";
 import Featuring from "./Sections/AboutFeaturing.vue";
-import Newsletter from "./Sections/AboutNewsletter.vue";
+//import Newsletter from "./Sections/AboutNewsletter.vue";
+import ContactViewComponent from "../ContactUs/ContactViewComponent.vue";
 
 const body = document.getElementsByTagName("body")[0];
 //hooks
@@ -60,33 +61,24 @@ onUnmounted(() => {
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center mx-auto my-auto">
             <h1 class="text-white">
-              Work with an amazing <span class="text-white" id="typed"></span>
+              Trabaja con el mejor <span class="text-white" id="typed"></span>
             </h1>
             <div id="typed-strings">
-              <h1>team</h1>
-              <h1>design</h1>
-              <h1>tool</h1>
+              <h1>producto</h1>
+              <h1>equipo</h1>
             </div>
             <p class="lead mb-4 text-white opacity-8">
-              We’re constantly trying to express ourselves and actualize our
-              dreams. If you have the opportunity to play this game
+              Importadores y distribuidores de RECORD el mayor fabricante 
+              a nivel mundial de sistemas para puertas automaticas
             </p>
-            <button type="submit" class="btn bg-white text-dark">
-              Create Account
-            </button>
-            <h6 class="text-white mb-2 mt-5">Find us on</h6>
+
+            <h6 class="text-white mb-2 mt-5">Encuentranos en</h6>
             <div class="d-flex justify-content-center">
-              <a href="javascript:;"
+              <a href="https://www.facebook.com/teambuilderecuador/?locale=es_LA"
                 ><i class="fab fa-facebook text-lg text-white me-4"></i
               ></a>
-              <a href="javascript:;"
-                ><i class="fab fa-instagram text-lg text-white me-4"></i
-              ></a>
-              <a href="javascript:;"
-                ><i class="fab fa-twitter text-lg text-white me-4"></i
-              ></a>
-              <a href="javascript:;"
-                ><i class="fab fa-google-plus text-lg text-white"></i
+              <a href="https://www.linkedin.com/in/stalin-jadan-40b6b9170/?originalSubdomain=ec"
+                ><i class="fab fa-linkedin text-lg text-white me-4"></i
               ></a>
             </div>
           </div>
@@ -98,7 +90,7 @@ onUnmounted(() => {
     <Information />
     <AboutTeam />
     <Featuring />
-    <Newsletter />
+    <ContactViewComponent />
   </div>
   <DefaultFooter />
 </template>
