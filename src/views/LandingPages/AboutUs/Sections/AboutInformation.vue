@@ -35,9 +35,9 @@ import CenteredBlogCard from "../../../../examples/cards/blogCards/CenteredBlogC
             <DefaultInfoCard
               color="info"
               icon="3p"
-              title="satisfacción del cliente"
-              description="We get insulted by others, lose trust for those We get back
-                  freezes"
+              title="Satisfacción al cliente"
+              description="Nos dedicamos a ofrecer un servicio de calidad para fortalecer relaciones y ganar la 
+              confianza de nuestros clientes."
             />
           </div>
         </div>

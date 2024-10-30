@@ -3,13 +3,12 @@ import { onMounted } from "vue";
 
 // Sections components
 import BaseLayout from "../../components/BaseLayout.vue";
-import View from "../../components/View.vue";
+
 
 // Features page components
 import FeatureOne from "./components/FeatureOne.vue";
 
-// Features page components codes
-import { feature1Code } from "./components/codes";
+
 
 //nav-pills
 import setNavPills from "@/assets/js/nav-pills";
@@ -21,14 +20,12 @@ onMounted(() => {
 </script>
 <template>
   <BaseLayout
-    title="Pueta automática abtible RECORD"
+    title="Puerta automática abtible RECORD"
     :breadcrumb="[
       { label: 'Page Sections', route: '/sections/page-sections/page-headers' },
       { label: 'Features' },
     ]"
   >
-    <View title="Features 1" :code="feature1Code" id="feature-1">
       <FeatureOne />
-    </View>
   </BaseLayout>
 </template>

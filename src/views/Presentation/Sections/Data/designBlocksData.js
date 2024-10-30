@@ -15,7 +15,7 @@ export default [
     items: [
       {
         image: imgFeatures,
-        title: "Pueta automática abtible RECORD",
+        title: "Puerta automática abtible RECORD",
         subtitle: "",
         route: "page-features",
         pro: false
@@ -56,5 +56,5 @@ export default [
         pro: false
       },
     ]
-  }  
+  }
 ];

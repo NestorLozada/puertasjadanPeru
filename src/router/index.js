@@ -62,8 +62,8 @@ const router = createRouter({
       component: PageFeatures,
     },
     {
-      path: "/sections/navigation/navbars",
-      name: "navigation-navbars",
+      path: "/productos/puerta-hermetica",
+      name: "puerta-hermetica",
       component: NavigationNavbars,
     },
     {

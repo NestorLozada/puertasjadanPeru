@@ -5,7 +5,6 @@ import { useWindowsWidth } from "../../assets/js/useWindowsWidth";
 
 // images
 import ArrDark from "@/assets/img/down-arrow-dark.svg";
-import downArrow from "@/assets/img/down-arrow.svg";
 import DownArrWhite from "@/assets/img/down-arrow-white.svg";
 
 const props = defineProps({
@@ -17,29 +16,29 @@ const props = defineProps({
     default: () => ({
       route: "https://www.creative-tim.com/product/vue-material-kit",
       color: "bg-gradient-success",
-      label: "Por definir LINK"
-    })
+      label: "Por definir",
+    }),
   },
   transparent: {
     type: Boolean,
-    default: false
+    default: false,
   },
   light: {
     type: Boolean,
-    default: false
+    default: false,
   },
   dark: {
     type: Boolean,
-    default: false
+    default: false,
   },
   sticky: {
     type: Boolean,
-    default: false
+    default: false,
   },
   darkText: {
     type: Boolean,
-    default: false
-  }
+    default: false,
+  },
 });
 
 // set arrow  color
@@ -98,7 +97,7 @@ watch(
       'my-3 blur border-radius-lg z-index-3 py-2 shadow py-2 start-0 end-0 mx-4 position-absolute mt-4':
         props.sticky,
       'navbar-light bg-white py-3': props.light,
-      ' navbar-dark bg-gradient-dark z-index-3 py-3': props.dark
+      ' navbar-dark bg-gradient-dark z-index-3 py-3': props.dark,
     }"
   >
     <div
@@ -113,16 +112,19 @@ watch(
         :class="[
           (props.transparent && textDark.value) || !props.transparent
             ? 'text-dark font-weight-bolder ms-sm-3'
-            : 'text-white font-weight-bolder ms-sm-3'
+            : 'text-white font-weight-bolder ms-sm-3',
         ]"
         :to="{ name: 'presentation' }"
         rel="tooltip"
         title="Designed and Coded by Creative Tim"
         data-placement="bottom"
       >
-        
-        <img src="../../assets/logos/builtek_2.png" alt="" class="my-2 mx-7 w-11" style="height: 30px; width: auto;"/>
-
+        <img
+          src="../../assets/logos/builtek_2.png"
+          alt=""
+          class="my-2 mx-7 w-11"
+          style="height: 30px; width: auto"
+        />
       </RouterLink>
       <RouterLink
         class="navbar-brand d-block d-md-none"
@@ -138,11 +140,6 @@ watch(
       >
         Builtek
       </RouterLink>
-      <a
-        href="https://www.creative-tim.com/product/vue-material-kit-pro"
-        class="btn btn-sm bg-gradient-success mb-0 ms-auto d-lg-none d-block"
-        >Escribenos</a
-      >
       <button
         class="navbar-toggler shadow-none ms-2"
         type="button"
@@ -253,7 +250,7 @@ watch(
                 :class="getTextColor()"
                 >view_day</i
               >
-              Sections
+              Productos
               <img
                 :src="getArrowColor()"
                 alt="down-arrow"
@@ -283,35 +280,16 @@ watch(
                           class="w-100 d-flex align-items-center justify-content-between"
                         >
                           <div>
-                            <h6
+                            <RouterLink
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
+                              :to="{ name: 'puerta-hermetica' }"
                             >
-                              Page Sections
-                            </h6>
-                            <span class="text-sm">See all sections</span>
+                              Puerta Hermética
+                            </RouterLink>
                           </div>
-                          <img
-                            :src="downArrow"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
                         </div>
                       </div>
                     </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'page-headers' }"
-                      >
-                        Page Headers
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'page-features' }"
-                      >
-                        Features
-                      </RouterLink>
-                    </div>
                   </li>
                   <li
                     class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
@@ -325,41 +303,16 @@ watch(
                           class="w-100 d-flex align-items-center justify-content-between"
                         >
                           <div>
-                            <h6
+                            <RouterLink
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
+                              :to="{ name: 'puerta-hermetica' }"
                             >
                               Navigation
-                            </h6>
-                            <span class="text-sm">See all navigations</span>
+                            </RouterLink>
                           </div>
-                          <img
-                            :src="downArrow"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
                         </div>
                       </div>
                     </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'navigation-navbars' }"
-                      >
-                        Navbars
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'navigation-navtabs' }"
-                      >
-                        Nav Tabs
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'navigation-pagination' }"
-                      >
-                        Pagination
-                      </RouterLink>
-                    </div>
                   </li>
                   <li
                     class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
@@ -373,35 +326,16 @@ watch(
                           class="w-100 d-flex align-items-center justify-content-between"
                         >
                           <div>
-                            <h6
+                            <RouterLink
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
+                              :to="{ name: 'puerta-hermetica' }"
                             >
-                              Input Areas
-                            </h6>
-                            <span class="text-sm">See all input areas</span>
+                              Navigation
+                            </RouterLink>
                           </div>
-                          <img
-                            :src="downArrow"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
                         </div>
                       </div>
                     </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'inputareas-inputs' }"
-                      >
-                        Inputs
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'inputareas-forms' }"
-                      >
-                        Forms
-                      </RouterLink>
-                    </div>
                   </li>
                   <li
                     class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
@@ -415,41 +349,16 @@ watch(
                           class="w-100 d-flex align-items-center justify-content-between"
                         >
                           <div>
-                            <h6
+                            <RouterLink
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
+                              :to="{ name: 'puerta-hermetica' }"
                             >
-                              Attention Catchers
-                            </h6>
-                            <span class="text-sm">See all examples</span>
+                              Navigation
+                            </RouterLink>
                           </div>
-                          <img
-                            :src="downArrow"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
                         </div>
                       </div>
                     </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'ac-alerts' }"
-                      >
-                        Alerts
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'ac-modals' }"
-                      >
-                        Modals
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'ac-tooltips-popovers' }"
-                      >
-                        Tooltips & Popovers
-                      </RouterLink>
-                    </div>
                   </li>
                   <li
                     class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
@@ -463,77 +372,16 @@ watch(
                           class="w-100 d-flex align-items-center justify-content-between"
                         >
                           <div>
-                            <h6
+                            <RouterLink
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
+                              :to="{ name: 'puerta-hermetica' }"
                             >
-                              Elements
-                            </h6>
-                            <span class="text-sm">See all elements</span>
+                              Navigation
+                            </RouterLink>
                           </div>
-                          <img
-                            :src="downArrow"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
                         </div>
                       </div>
                     </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-avatars' }"
-                      >
-                        Avatars
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-badges' }"
-                      >
-                        Badges
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-breadcrumbs' }"
-                      >
-                        Breadcrumbs
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-buttons' }"
-                      >
-                        Buttons
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-button-groups' }"
-                      >
-                        Button Groups
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-dropdowns' }"
-                      >
-                        Dropdowns
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-progress-bars' }"
-                      >
-                        Progress Bars
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-toggles' }"
-                      >
-                        Toggles
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-typography' }"
-                      >
-                        Typography
-                      </RouterLink>
-                    </div>
                   </li>
                 </ul>
               </div>
@@ -579,7 +427,7 @@ watch(
                   </div>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'navigation-navbars' }"
+                    :to="{ name: 'puerta-hermetica' }"
                   >
                     Navbars
                   </RouterLink>
@@ -721,171 +569,6 @@ watch(
                 </div>
               </div>
             </div>
-          </li>
-          <li class="nav-item dropdown dropdown-hover mx-2">
-            <a
-              role="button"
-              class="nav-link ps-2 d-flex cursor-pointer align-items-center"
-              :class="getTextColor()"
-              id="dropdownMenuDocs"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <i
-                class="material-icons opacity-6 me-2 text-md"
-                :class="getTextColor()"
-                >article</i
-              >
-              Docs
-              <img
-                :src="getArrowColor()"
-                alt="down-arrow"
-                class="arrow ms-2 d-lg-block d-none"
-              />
-              <img
-                :src="getArrowColor()"
-                alt="down-arrow"
-                class="arrow ms-1 d-lg-none d-block ms-auto"
-              />
-            </a>
-            <div
-              class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md mt-0 mt-lg-3 p-3 border-radius-lg"
-              aria-labelledby="dropdownMenuDocs"
-            >
-              <div class="d-none d-lg-block">
-                <ul class="list-group">
-                  <li class="nav-item list-group-item border-0 p-0">
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href=" https://www.creative-tim.com/learning-lab/vue/overview/material-kit/"
-                    >
-                      <h6
-                        class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                      >
-                        Getting Started
-                      </h6>
-                      <span class="text-sm"
-                        >All about overview, quick start, license and
-                        contents</span
-                      >
-                    </a>
-                  </li>
-                  <li class="nav-item list-group-item border-0 p-0">
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href=" https://www.creative-tim.com/learning-lab/vue/colors/material-kit/"
-                    >
-                      <h6
-                        class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                      >
-                        Foundation
-                      </h6>
-                      <span class="text-sm"
-                        >See our colors, icons and typography</span
-                      >
-                    </a>
-                  </li>
-                  <li class="nav-item list-group-item border-0 p-0">
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href=" https://www.creative-tim.com/learning-lab/vue/alerts/material-kit/"
-                    >
-                      <h6
-                        class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                      >
-                        Components
-                      </h6>
-                      <span class="text-sm"
-                        >Explore our collection of fully designed
-                        components</span
-                      >
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="row d-lg-none">
-                <div class="col-md-12 g-0">
-                  <a
-                    class="dropdown-item py-2 ps-3 border-radius-md"
-                    href="./pages/about-us.html"
-                  >
-                    <h6
-                      class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                    >
-                      Getting Started
-                    </h6>
-                    <span class="text-sm"
-                      >All about overview, quick start, license and
-                      contents</span
-                    >
-                  </a>
-                  <a
-                    class="dropdown-item py-2 ps-3 border-radius-md"
-                    href="./pages/about-us.html"
-                  >
-                    <h6
-                      class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                    >
-                      Foundation
-                    </h6>
-                    <span class="text-sm"
-                      >See our colors, icons and typography</span
-                    >
-                  </a>
-                  <a
-                    class="dropdown-item py-2 ps-3 border-radius-md"
-                    href="./pages/about-us.html"
-                  >
-                    <h6
-                      class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                    >
-                      Components
-                    </h6>
-                    <span class="text-sm"
-                      >Explore our collection of fully designed components</span
-                    >
-                  </a>
-                  <a
-                    class="dropdown-item py-2 ps-3 border-radius-md"
-                    href="./pages/about-us.html"
-                  >
-                    <h6
-                      class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                    >
-                      Plugins
-                    </h6>
-                    <span class="text-sm"
-                      >Check how you can integrate our plugins</span
-                    >
-                  </a>
-                  <a
-                    class="dropdown-item py-2 ps-3 border-radius-md"
-                    href="./pages/about-us.html"
-                  >
-                    <h6
-                      class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                    >
-                      Utility Classes
-                    </h6>
-                    <span class="text-sm"
-                      >For those who want flexibility, use our utility
-                      classes</span
-                    >
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <ul class="navbar-nav d-lg-block d-none">
-          <li class="nav-item">
-            <a
-              :href="action.route"
-              class="btn btn-sm mb-0"
-              :class="action.color"
-              onclick="smoothToPricing('pricing-soft-ui')"
-              >{{ action.label }}</a
-            >
           </li>
         </ul>
       </div>
