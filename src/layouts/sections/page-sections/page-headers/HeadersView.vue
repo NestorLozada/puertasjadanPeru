@@ -3,13 +3,9 @@ import { onMounted } from "vue";
 
 // Sections components
 import BaseLayout from "../../components/BaseLayout.vue";
-import View from "../../components/View.vue";
+import ProductosCatalogs from "../../productos/ProductosCatalog.vue";
 
-// Headers page components
-import HeaderOne from "./components/HeaderOne.vue";
-
-// Headers page components codes
-import { header1Code } from "./components/codes";
+import data from "../../../../views/Presentation/Sections/Data/designBlocksData";
 
 // nav-pills
 import setNavPills from "@/assets/js/nav-pills.js";
@@ -21,14 +17,12 @@ onMounted(() => {
 </script>
 <template>
   <BaseLayout
-    title="Page Headers"
+    title="Productos"
     :breadcrumb="[
-      { label: 'Page Sections', route: '/sections/page-sections/page-headers' },
-      { label: 'Page Headers' },
+      { label: 'Inicio', route: '/' },
+      { label: 'Todos los productos' },
     ]"
   >
-    <View title="Header 1" :code="header1Code" id="header-1">
-      <HeaderOne />
-    </View>
+  <ProductosCatalogs :data="data" />
   </BaseLayout>
 </template>

@@ -52,19 +52,19 @@ const router = createRouter({
       component: SignInBasicView,
     },
     {
-      path: "/sections/page-sections/page-headers",
+      path: "/productos",
       name: "page-headers",
       component: PageHeaders,
     },
     {
-      path: "/sections/page-sections/features",
+      path: "/productos/puerta-hermetica",
       name: "page-features",
       component: PageFeatures,
     },
     {
       path: "/productos/puerta-hermetica",
       name: "puerta-hermetica",
-      component: NavigationNavbars,
+      component: PageFeatures,
     },
     {
       path: "/sections/navigation/nav-tabs",

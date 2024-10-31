@@ -1,5 +1,5 @@
 <script setup>
-import ExampleCard from "../Components/ExampleCard.vue";
+import ExampleCard from "../../../views/Presentation/Components/ExampleCard.vue";
 
 defineProps({
   data: {
@@ -17,10 +17,6 @@ defineProps({
       type: Array,
       required: true,
       image: {
-        type: String,
-        required: true,
-      },
-      title: {
         type: String,
         required: true,
       },
@@ -48,31 +44,14 @@ export default {
 <template>
   <section class="my-5 py-5">
     <div class="container">
-      <div class="row">
-        <div class="row justify-content-center text-center my-sm-5">
-          <div class="col-lg-6">
-            <h2 class="text-dark mb-0">Conoce nuestros productos</h2>
-          </div>
-        </div>
-      </div>
+
     </div>
     <div class="container mt-sm-5 mt-3">
       <div
-        v-for="({ heading, description, items }, index) in data"
+        v-for="({ heading, items }, index) in data"
         :class="`row ${index != 0 && index != -1 ? 'pt-lg-6' : ''}`"
         :key="heading"
       >
-        <div :class="`${col1 ?? 'col-lg-3'}`">
-          <div
-            class="position-sticky pb-lg-5 pb-3 mt-lg-0 mt-5 ps-2"
-            style="top: 100px"
-          >
-            <h3>{{ heading }}</h3>
-            <h6 class="text-secondary font-weight-normal pe-3">
-              {{ description }}
-            </h6>
-          </div>
-        </div>
         <div :class="`${col2 ?? 'col-lg-9'}`">
           <div :class="`row ${index != 0 ? 'mt-3' : ''}`">
             <div

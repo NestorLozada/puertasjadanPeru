@@ -9,14 +9,14 @@ import imgStat from "@/assets/logos/producto-4.jpg";
 
 export default [
   {
-    heading: "Design Blocks",
+    heading: "",
     description:
-      "A selection of 45 page sections that fit perfectly in any combination",
+      "Ofrecemos productos de alta calidad para asegurar su funcionamiento óptimo y la satisfacción de nuestros clientes.",
     items: [
       {
         image: imgFeatures,
-        title: "Puerta automática abtible RECORD",
-        subtitle: "",
+        title: "Puerta Hermetica",
+        subtitle: "QUIRÓFANOS Y HOSPITALES",
         route: "page-features",
         pro: false
       },
