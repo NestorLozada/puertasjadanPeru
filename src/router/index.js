@@ -5,7 +5,13 @@ import ContactView from "../views/LandingPages/ContactUs/ContactView.vue";
 import AuthorView from "../views/LandingPages/Author/AuthorView.vue";
 import SignInBasicView from "../views/LandingPages/SignIn/BasicView.vue";
 import PageHeaders from "../layouts/sections/page-sections/page-headers/HeadersView.vue";
-import PageFeatures from "../layouts/sections/page-sections/features/FeaturesView.vue";
+import PageFeatures from "../layouts/sections/page-sections/features/Products.vue";
+import PuertaHermetica from "../layouts/sections/page-sections/features/components/PuertaHermetica.vue";
+import PuertaAbatible from "../layouts/sections/page-sections/features/components/PuertaAbatible.vue";
+import PuertaGiratoria from "../layouts//sections/page-sections/features/components/PuertaGiratoria.vue";
+import PuertaAntipatica from "../layouts/sections/page-sections/features/components/PuertaAntipatico.vue";
+import PuertaPlegable from "../layouts/sections/page-sections/features/components/PuertaPlegable.vue";
+import PuertaTelescopica from "../layouts/sections/page-sections/features/components/PuertaTelescopica.vue";
 //import NavigationNavbars from "../layouts/sections/navigation/navbars/NavbarsView.vue";
 import NavigationNavTabs from "../layouts/sections/navigation/nav-tabs/NavTabsView.vue";
 import NavigationPagination from "../layouts/sections/navigation/pagination/PaginationView.vue";
@@ -64,7 +70,32 @@ const router = createRouter({
     {
       path: "/productos/puerta-hermetica",
       name: "puerta-hermetica",
-      component: PageFeatures,
+      component: PuertaHermetica,
+    },
+    {
+      path: "/productos/puerta-abatible",
+      name: "puerta-abatible",
+      component: PuertaAbatible,
+    },
+    {
+      path: "/productos/puerta-antipatico",
+      name: "puerta-abatible",
+      component: PuertaAntipatica,
+    },
+    {
+      path: "/productos/puerta-giratoria",
+      name: "puerta-abatible",
+      component: PuertaGiratoria,
+    },
+    {
+      path: "/productos/puerta-plegable",
+      name: "puerta-abatible",
+      component: PuertaPlegable,
+    },
+    {
+      path: "/productos/puerta-telescopica",
+      name: "puerta-abatible",
+      component: PuertaTelescopica,
     },
     {
       path: "/sections/navigation/nav-tabs",

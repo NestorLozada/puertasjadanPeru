@@ -5,7 +5,7 @@ import { onMounted } from "vue";
 import BaseLayout from "../../components/BaseLayout.vue";
 
 // Features page components
-import FeatureOne from "./components/FeatureOne.vue";
+import FeatureOne from "./components/PuertaHermetica.vue";
 
 //nav-pills
 import setNavPills from "@/assets/js/nav-pills";

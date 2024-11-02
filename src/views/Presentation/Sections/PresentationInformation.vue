@@ -4,7 +4,7 @@ import RotatingCardFront from "../../../examples/cards/rotatingCards/RotatingCar
 import RotatingCardBack from "../../../examples/cards/rotatingCards/RotatingCardBack.vue";
 import DefaultInfoCard from "../../../examples/cards/infoCards/DefaultInfoCard.vue";
 import imgTest from "@/assets/logos/producto-4.jpg";
-import imgTest2 from "@/assets/logos/producto-3.jpg";
+import imgTest2 from "@/assets/logos/puertaTelescopica.jpg";
 </script>
 <template>
   <section class="my-5 py-5">

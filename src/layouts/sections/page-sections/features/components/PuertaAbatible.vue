@@ -1,13 +1,17 @@
 <script setup>
 import AboutUsOption from "@/views/LandingPages/components/AboutUsOption.vue";
-import puertaHermetica from "../../../../../assets/logos/producto-4.jpg"
+import puertaHermetica from "../../../../../assets/logos/producto-4.jpg";
 </script>
 <template>
   <section class="py-9">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 my-auto">
-          <img :src="puertaHermetica" :alt="title" class="img-fluid border-radius-lg" />
+          <img
+            :src="puertaHermetica"
+            :alt="title"
+            class="img-fluid border-radius-lg"
+          />
         </div>
         <div class="col-lg-6 mt-lg-0 mt-5 ps-lg-0 ps-0">
           <AboutUsOption

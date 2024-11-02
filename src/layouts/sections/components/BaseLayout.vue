@@ -23,10 +23,17 @@ defineProps({
           <Breadcrumbs :routes="breadcrumb" />
           <h3>{{ title }}</h3>
         </div>
-
         <slot />
       </div>
     </div>
   </div>
   <CenteredFooter />
 </template>
+
+<style scoped>
+.fixed-size {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+}
+</style>
