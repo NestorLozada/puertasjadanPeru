@@ -23,6 +23,6 @@ onMounted(() => {
       { label: 'Puerta Hermetica' },
     ]"
   >
-      <FeatureOne />
+    <FeatureOne />
   </BaseLayout>
 </template>

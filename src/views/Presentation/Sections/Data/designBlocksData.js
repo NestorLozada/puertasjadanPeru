@@ -1,11 +1,9 @@
-
-import imgPricing from "@/assets/logos/producto-4.jpg";
-import imgFeatures from "@/assets/logos/producto-4.jpg";
+import puertaAbatible from "@/assets/logos/producto-4.jpg";
+import imgPuetaHermetica from "@/assets/logos/producto-4.jpg";
 import imgBlogPosts from "@/assets/logos/producto-4.jpg";
 import imgTestimonials from "@/assets/logos/producto-4.jpg";
 import imgTeam from "@/assets/logos/producto-4.jpg";
 import imgStat from "@/assets/logos/producto-4.jpg";
-
 
 export default [
   {
@@ -14,47 +12,68 @@ export default [
       "Ofrecemos productos de alta calidad para asegurar su funcionamiento óptimo y la satisfacción de nuestros clientes.",
     items: [
       {
-        image: imgFeatures,
+        image: imgPuetaHermetica,
         title: "Puerta Hermetica",
         subtitle: "QUIRÓFANOS Y HOSPITALES",
         route: "page-features",
-        pro: false
+        pro: false,
       },
       {
-        image: imgPricing,
-        title: "Pricing",
-        subtitle: "8 Examples",
+        image: puertaAbatible,
+        title: "Puerta Record Abatible",
+        subtitle: "Tecnología de vanguardia",
         route: "presentation",
-        pro: false
-      }, 
+        pro: false,
+      },
       {
         image: imgBlogPosts,
-        title: "Blog Posts",
-        subtitle: "11 Examples",
+        title: "Puerta Automática Anitpatico",
+        subtitle: "Tecnología de vanguardia",
         route: "presentation",
-        pro: false
+        pro: false,
       },
       {
         image: imgTestimonials,
-        title: "Testimonials",
-        subtitle: "11 Examples",
+        title: "Puerta Automática Plegable",
+        subtitle: "Tecnología de vanguardia",
         route: "presentation",
-        pro: false
+        pro: false,
       },
       {
         image: imgTeam,
-        title: "Teams",
-        subtitle: "6 Examples",
+        title: "Puerta Automática Telescópica",
+        subtitle: "Tecnología de vanguardia",
         route: "presentation",
-        pro: false
+        pro: false,
       },
       {
         image: imgStat,
-        title: "Stats",
+        title: "Puerta Giratoria Automática",
         subtitle: "3 Examples",
         route: "presentation",
-        pro: false
+        pro: false,
       },
-    ]
-  }
+      {
+        image: imgStat,
+        title: "Puerta Automática FlipFlow",
+        subtitle: "3 Examples",
+        route: "presentation",
+        pro: false,
+      },
+      {
+        image: imgStat,
+        title: "Record Systems 20",
+        subtitle: "3 Examples",
+        route: "presentation",
+        pro: false,
+      },
+      {
+        image: imgStat,
+        title: "Ventanas con plomo",
+        subtitle: "3 Examples",
+        route: "presentation",
+        pro: false,
+      },
+    ],
+  },
 ];
