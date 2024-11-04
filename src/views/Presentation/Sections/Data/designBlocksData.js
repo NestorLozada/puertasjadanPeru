@@ -16,7 +16,7 @@ export default [
         image: imgPuetaHermetica,
         title: "Puerta Hermetica",
         subtitle: "QUIRÓFANOS Y HOSPITALES",
-        route: "page-features",
+        route: "puerta-hermetica",
         pro: false,
       },
       {

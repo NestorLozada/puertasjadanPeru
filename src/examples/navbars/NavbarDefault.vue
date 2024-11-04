@@ -408,7 +408,7 @@ watch(
                   </RouterLink>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'page-features' }"
+                    :to="{ name: 'puerta-hermetica' }"
                   >
                     Features
                   </RouterLink>

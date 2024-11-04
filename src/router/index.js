@@ -4,9 +4,8 @@ import AboutView from "../views/LandingPages/AboutUs/AboutView.vue";
 import ContactView from "../views/LandingPages/ContactUs/ContactView.vue";
 import AuthorView from "../views/LandingPages/Author/AuthorView.vue";
 import SignInBasicView from "../views/LandingPages/SignIn/BasicView.vue";
-import PageHeaders from "../layouts/sections/page-sections/page-headers/HeadersView.vue";
-import PageFeatures from "../layouts/sections/page-sections/features/Products.vue";
-import PuertaHermetica from "../layouts/sections/page-sections/features/components/PuertaHermetica.vue";
+import PageHeaders from "../layouts/sections/page-sections/page-headers/ProductosMainView.vue";
+import PuertaHermeticaView from "../layouts/sections/page-sections/features/HermeticaViw.vue";
 import PuertaAbatible from "../layouts/sections/page-sections/features/components/PuertaAbatible.vue";
 import PuertaGiratoria from "../layouts//sections/page-sections/features/components/PuertaGiratoria.vue";
 import PuertaAntipatica from "../layouts/sections/page-sections/features/components/PuertaAntipatico.vue";
@@ -64,13 +63,8 @@ const router = createRouter({
     },
     {
       path: "/productos/puerta-hermetica",
-      name: "page-features",
-      component: PageFeatures,
-    },
-    {
-      path: "/productos/puerta-hermetica",
       name: "puerta-hermetica",
-      component: PuertaHermetica,
+      component: PuertaHermeticaView,
     },
     {
       path: "/productos/puerta-abatible",

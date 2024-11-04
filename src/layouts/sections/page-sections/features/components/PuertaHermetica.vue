@@ -3,7 +3,7 @@ import AboutUsOption from "@/views/LandingPages/components/AboutUsOption.vue";
 import puertaHermetica from "../../../../../assets/logos/producto-4.jpg";
 </script>
 <template>
-  <section class="py-9">
+  <section class="container10">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 my-auto">
@@ -34,7 +34,7 @@ import puertaHermetica from "../../../../../assets/logos/producto-4.jpg";
             desplaza hacia abajo y hacia la pared unos milímetros, ejerciendo así una <br />
             fuerte presión sobre las juntas. La motorización en ese punto del recorrido <br />
             incrementa su potencia para poder lograr una perfecta estanqueidad contra las <br />
-            superficies de sellado.  "
+            superficies de sellado."
           />
         </div>
       </div>
