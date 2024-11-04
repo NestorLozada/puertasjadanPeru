@@ -5,13 +5,15 @@ import ContactView from "../views/LandingPages/ContactUs/ContactView.vue";
 import AuthorView from "../views/LandingPages/Author/AuthorView.vue";
 import SignInBasicView from "../views/LandingPages/SignIn/BasicView.vue";
 import PageHeaders from "../layouts/sections/page-sections/page-headers/ProductosMainView.vue";
+
 import PuertaHermeticaView from "../layouts/sections/page-sections/features/HermeticaViw.vue";
-import PuertaAbatible from "../layouts/sections/page-sections/features/components/PuertaAbatible.vue";
-import PuertaGiratoria from "../layouts//sections/page-sections/features/components/PuertaGiratoria.vue";
-import PuertaAntipatica from "../layouts/sections/page-sections/features/components/PuertaAntipatico.vue";
-import PuertaPlegable from "../layouts/sections/page-sections/features/components/PuertaPlegable.vue";
-import PuertaTelescopica from "../layouts/sections/page-sections/features/components/PuertaTelescopica.vue";
-//import NavigationNavbars from "../layouts/sections/navigation/navbars/NavbarsView.vue";
+import PuertaAntipaticoView from "../layouts/sections/page-sections/features/AntipaticoView.vue";
+import PuertaAbatibleView from "../layouts/sections/page-sections/features/AbatibleView.vue";
+import PuertaFlipFlowView from "../layouts/sections/page-sections/features/FlipFlowView.vue";
+import PuertaGiratoriaView from "../layouts/sections/page-sections/features/GiratoriaView.vue";
+import PuertaPlegableView from "../layouts/sections/page-sections/features/PlegableView.vue";
+import PuertaTelescopicaView from "../layouts/sections/page-sections/features/TelescopicaView.vue";
+
 import NavigationNavTabs from "../layouts/sections/navigation/nav-tabs/NavTabsView.vue";
 import NavigationPagination from "../layouts/sections/navigation/pagination/PaginationView.vue";
 import InputAreasInputs from "../layouts/sections/input-areas/inputs/InputsView.vue";
@@ -69,27 +71,32 @@ const router = createRouter({
     {
       path: "/productos/puerta-abatible",
       name: "puerta-abatible",
-      component: PuertaAbatible,
+      component: PuertaAbatibleView,
     },
     {
       path: "/productos/puerta-antipatico",
-      name: "puerta-abatible",
-      component: PuertaAntipatica,
+      name: "puerta-antipatico",
+      component: PuertaAntipaticoView,
     },
     {
       path: "/productos/puerta-giratoria",
-      name: "puerta-abatible",
-      component: PuertaGiratoria,
+      name: "puerta-giratoria",
+      component: PuertaGiratoriaView,
     },
     {
       path: "/productos/puerta-plegable",
-      name: "puerta-abatible",
-      component: PuertaPlegable,
+      name: "puerta-plegable",
+      component: PuertaPlegableView,
     },
     {
       path: "/productos/puerta-telescopica",
-      name: "puerta-abatible",
-      component: PuertaTelescopica,
+      name: "puerta-telescopica",
+      component: PuertaTelescopicaView,
+    },
+    {
+      path: "/productos/puerta-flipflow",
+      name: "puerta-flipflow",
+      component: PuertaFlipFlowView,
     },
     {
       path: "/sections/navigation/nav-tabs",

@@ -23,6 +23,6 @@ onMounted(() => {
       { label: 'Todos los productos' },
     ]"
   >
-  <ProductosCatalogs :data="data" />
+    <ProductosCatalogs :data="data" />
   </BaseLayout>
 </template>
