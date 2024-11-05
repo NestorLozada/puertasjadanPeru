@@ -5,7 +5,7 @@ import { onMounted } from "vue";
 import BaseLayout from "../../components/BaseLayout.vue";
 
 // Features page components
-import FeatureOne from "./components/PuertaHermetica.vue";
+import PuertaAbatible from "./components/PuertaAbatible.vue";
 
 //nav-pills
 import setNavPills from "@/assets/js/nav-pills";
@@ -23,6 +23,6 @@ onMounted(() => {
       { label: 'Puerta Abatible' },
     ]"
   >
-    <FeatureOne />
+    <PuertaAbatible />
   </BaseLayout>
 </template>

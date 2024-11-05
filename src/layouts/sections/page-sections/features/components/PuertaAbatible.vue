@@ -1,14 +1,15 @@
 <script setup>
 import AboutUsOption from "@/views/LandingPages/components/AboutUsOption.vue";
-import puertaHermetica from "../../../../../assets/logos/producto-4.jpg";
+import PuertaAbatible from "../../../../../assets/logos/PuertaAbatible.jpg";
+
 </script>
 <template>
-  <section class="py-9">
+  <section class="">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 my-auto">
           <img
-            :src="puertaHermetica"
+            :src="PuertaAbatible"
             :alt="title"
             class="img-fluid border-radius-lg"
           />
@@ -16,25 +17,22 @@ import puertaHermetica from "../../../../../assets/logos/producto-4.jpg";
         <div class="col-lg-6 mt-lg-0 mt-5 ps-lg-0 ps-0">
           <AboutUsOption
             icon="mediation"
-            content="Las puertas correderas herméticas record CLEAN® <br />
-            deslizan por un carril especial que le permite aplastar <br />
-            las juntas de la hoja contra los marcos de pared a <br />
-            la vez que cae contra el suelo para sellar la parte <br />
-            inferior con otra junta de estanqueidad.  "
+            content="Sus cualidades de resistencia se deben principalmente <br />
+            a su construcción electromecánica reforzada."
           />
           <AboutUsOption
             icon="settings_overscan"
-            content="La hoja montada sobre levas giratorias reduce la fricción <br />
-            y minimizan el ruido"
+            content="El operador asocia una tecnología <br />
+            de vanguardia que combinan tres elementos <br />
+            de ingeniería para lograr un funcionamiento <br />
+            perfecto y duradero."
           />
 
           <AboutUsOption
             icon="token"
-            content="Poco antes de llegar a la posición de cierre, la puerta de <br />
-            desplaza hacia abajo y hacia la pared unos milímetros, ejerciendo así una <br />
-            fuerte presión sobre las juntas. La motorización en ese punto del recorrido <br />
-            incrementa su potencia para poder lograr una perfecta estanqueidad contra las <br />
-            superficies de sellado.  "
+            content="El motor de uso intensivo, un muelle potente y <br />
+            reforzado y una leva específica para cada <br />
+            tipo de puerta y de apertura"
           />
         </div>
       </div>

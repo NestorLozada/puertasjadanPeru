@@ -57,7 +57,7 @@ export default [
       {
         image: puertaFlipLfowIMG,
         title: "Puerta Automática FlipFlow",
-        subtitle: "3 Examples",
+        subtitle: "Ideal para aereopuertos",
         route: "puerta-flipflow",
         pro: false,
       },
