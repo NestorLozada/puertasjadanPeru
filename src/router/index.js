@@ -4,7 +4,7 @@ import AboutView from "../views/LandingPages/AboutUs/AboutView.vue";
 import ContactView from "../views/LandingPages/ContactUs/ContactView.vue";
 import AuthorView from "../views/LandingPages/Author/AuthorView.vue";
 import SignInBasicView from "../views/LandingPages/SignIn/BasicView.vue";
-import PageHeaders from "../layouts/sections/page-sections/page-headers/ProductosMainView.vue";
+import PageHeaders from "../layouts/sections/page-sections/page-headers/ProductosMainView2.vue";
 
 import PuertaHermeticaView from "../layouts/sections/page-sections/features/HermeticaViw.vue";
 import PuertaAntipaticoView from "../layouts/sections/page-sections/features/AntipaticoView.vue";
