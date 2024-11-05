@@ -1,18 +1,15 @@
 <script setup>
 import AboutUsOption from "@/views/LandingPages/components/AboutUsOption.vue";
-const puertaAbatibleUrl = new URL(
-  "@/assets/logos/PuertaAbatible.jpg",
-  import.meta.url
-).href;
-</script>
+import PuertaAbatible from "../../../../../assets/logos/PuertaAbatible.jpg";
 
+</script>
 <template>
-  <section>
+  <section class="">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 my-auto">
           <img
-            :src="puertaAbatibleUrl"
+            :src="PuertaAbatible"
             :alt="title"
             class="img-fluid border-radius-lg"
           />
@@ -30,6 +27,7 @@ const puertaAbatibleUrl = new URL(
             de ingeniería para lograr un funcionamiento <br />
             perfecto y duradero."
           />
+
           <AboutUsOption
             icon="token"
             content="El motor de uso intensivo, un muelle potente y <br />
