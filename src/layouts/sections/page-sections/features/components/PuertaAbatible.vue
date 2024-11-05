@@ -1,6 +1,6 @@
 <script setup>
 import AboutUsOption from "@/views/LandingPages/components/AboutUsOption.vue";
-import PuertaAbatible from "../../../../../assets/logos/PuertaAbatible.jpg";
+import PuertaAbatible from "../../../../../assets/logos/puertaAbatible.jpg";
 
 </script>
 <template>
