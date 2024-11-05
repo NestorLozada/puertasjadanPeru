@@ -1,6 +1,7 @@
 <script setup>
 import AboutUsOption from "@/views/LandingPages/components/AboutUsOption.vue";
 import puertaFlipFlowImg from "../../../../../assets/logos/producto-6.jpg";
+
 </script>
 <template>
   <section >
