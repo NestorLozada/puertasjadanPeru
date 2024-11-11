@@ -49,7 +49,7 @@ const router = createRouter({
       component: ContactView,
     },
     {
-      path: "/productos",
+      path: "/productosS",
       name: "author",
       component: AuthorView,
     },
