@@ -2,10 +2,10 @@ import { createRouter, createWebHistory } from "vue-router";
 import PresentationView from "../views/Presentation/PresentationView.vue";
 import AboutView from "../views/LandingPages/AboutUs/AboutView.vue";
 import ContactView from "../views/LandingPages/ContactUs/ContactView.vue";
-import AuthorView from "../views/LandingPages/Author/AuthorView.vue";
+import AuthorView from "../views/LandingPages/Author/ProductsView.vue";
 import SignInBasicView from "../views/LandingPages/SignIn/BasicView.vue";
 import PageHeaders from "../layouts/sections/page-sections/page-headers/ProductosMainView.vue";
-import PMainView from "../layouts/sections/page-sections/features/PMainView.vue";
+
 import PuertaHermeticaView from "../layouts/sections/page-sections/features/HermeticaViw.vue";
 import PuertaAntipaticoView from "../layouts/sections/page-sections/features/AntipaticoView.vue";
 import PuertaAbatibleView from "../layouts/sections/page-sections/features/AbatibleView.vue";
@@ -49,7 +49,7 @@ const router = createRouter({
       component: ContactView,
     },
     {
-      path: "/pages/landing-pages/author",
+      path: "/productos",
       name: "author",
       component: AuthorView,
     },
@@ -61,7 +61,7 @@ const router = createRouter({
     {
       path: "/productos",
       name: "page-headers",
-      component: PMainView,
+      component: PageHeaders,
     },
     {
       path: "/productos/puerta-hermetica",

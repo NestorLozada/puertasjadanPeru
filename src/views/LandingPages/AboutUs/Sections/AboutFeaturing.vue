@@ -5,20 +5,19 @@ import DefaultCounterCard from "../../../../examples/cards/counterCards/DefaultC
 <template>
   <section class="pt-4 pb-6" id="count-stats">
     <div class="container">
-
       <div class="row justify-content-center text-center">
         <div class="col-md-3">
           <DefaultCounterCard
-            title="Projects"
-            description="Of “high-performing” level are led by a certified project manager"
+            title="Clientes"
+            description="Nuestros clientes garantizan nuestra calidad"
             :count="5234"
             :duration="3000"
           />
         </div>
         <div class="col-md-3">
           <DefaultCounterCard
-            title="Hours"
-            description="That meets quality standards required by our users"
+            title="Proyectos"
+            description="Proyectos operando al 100% y sin problema"
             :count="3400"
             suffix="+"
             :duration="3000"
@@ -26,8 +25,8 @@ import DefaultCounterCard from "../../../../examples/cards/counterCards/DefaultC
         </div>
         <div class="col-md-3">
           <DefaultCounterCard
-            title="Support"
-            description="Actively engage team members that finishes on time"
+            title="Asistencia"
+            description="Asistencia en todos los equipos y en todo lugar"
             :count="24"
             suffix="/7"
             :duration="4000"

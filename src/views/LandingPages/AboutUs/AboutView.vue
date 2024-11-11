@@ -4,16 +4,16 @@ import { onMounted, onUnmounted } from "vue";
 //example components
 import DefaultNavbar from "../../../examples/navbars/NavbarDefault.vue";
 import DefaultFooter from "../../../examples/footers/FooterDefault.vue";
-
+import backgroundImages from "../../../assets/logos/sliding-door.jpg";
 //image
-import bg0 from "@/assets/img/bg9.jpg";
+//import bg0 from "@/assets/img/bg9.jpg";
 
 //dep
 import Typed from "typed.js";
 
 //sections
 import Information from "./Sections/AboutInformation.vue";
-import AboutTeam from "./Sections/AboutTeam.vue";
+// import AboutTeam from "./Sections/AboutTeam.vue";
 import Featuring from "./Sections/AboutFeaturing.vue";
 //import Newsletter from "./Sections/AboutNewsletter.vue";
 import ContactViewComponent from "../ContactUs/ContactViewComponent.vue";
@@ -54,7 +54,7 @@ onUnmounted(() => {
   <header class="bg-gradient-dark">
     <div
       class="page-header min-vh-75"
-      :style="{ backgroundImage: `url(${bg0})` }"
+      :style="{ backgroundImage: `url(${backgroundImages})` }"
     >
       <span class="mask bg-gradient-dark opacity-6"></span>
       <div class="container">
@@ -88,7 +88,7 @@ onUnmounted(() => {
   </header>
   <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
     <Information />
-    <AboutTeam />
+    <!-- <AboutTeam /> -->
     <Featuring />
     <ContactViewComponent />
   </div>

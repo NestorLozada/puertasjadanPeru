@@ -305,9 +305,9 @@ watch(
                           <div>
                             <RouterLink
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                              :to="{ name: 'puerta-hermetica' }"
+                              :to="{ name: 'puerta-abatible' }"
                             >
-                              Navigation
+                              Puerta Abatible
                             </RouterLink>
                           </div>
                         </div>
@@ -328,9 +328,9 @@ watch(
                           <div>
                             <RouterLink
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                              :to="{ name: 'puerta-hermetica' }"
+                              :to="{ name: 'puerta-antipatico' }"
                             >
-                              Navigation
+                              Puerta Antipatico
                             </RouterLink>
                           </div>
                         </div>
@@ -351,9 +351,9 @@ watch(
                           <div>
                             <RouterLink
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                              :to="{ name: 'puerta-hermetica' }"
+                              :to="{ name: 'puerta-plegable' }"
                             >
-                              Navigation
+                              Puerta Plegable
                             </RouterLink>
                           </div>
                         </div>
@@ -374,9 +374,55 @@ watch(
                           <div>
                             <RouterLink
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                              :to="{ name: 'puerta-hermetica' }"
+                              :to="{ name: 'puerta-telescopica' }"
                             >
-                              Navigation
+                              Puerta Telescopica
+                            </RouterLink>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
+                  >
+                    <a
+                      class="dropdown-item py-2 ps-3 border-radius-md"
+                      href="javascript:;"
+                    >
+                      <div class="d-flex">
+                        <div
+                          class="w-100 d-flex align-items-center justify-content-between"
+                        >
+                          <div>
+                            <RouterLink
+                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
+                              :to="{ name: 'puerta-giratoria' }"
+                            >
+                              Puerta Giratoria
+                            </RouterLink>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
+                  >
+                    <a
+                      class="dropdown-item py-2 ps-3 border-radius-md"
+                      href="javascript:;"
+                    >
+                      <div class="d-flex">
+                        <div
+                          class="w-100 d-flex align-items-center justify-content-between"
+                        >
+                          <div>
+                            <RouterLink
+                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
+                              :to="{ name: 'puerta-flipflow' }"
+                            >
+                              Puerta FlipFlow
                             </RouterLink>
                           </div>
                         </div>
