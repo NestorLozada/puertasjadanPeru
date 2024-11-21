@@ -19,7 +19,7 @@ onMounted(() => {
   <BaseLayout
     title="Puerta Telescopica"
     :breadcrumb="[
-      { label: 'Productos', route: './productos' },
+      { label: 'Productos', route: '/productos' },
       { label: 'Puerta Telescopica' },
     ]"
   >

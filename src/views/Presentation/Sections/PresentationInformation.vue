@@ -26,7 +26,7 @@ import imgTest2 from "@/assets/logos/puertaTelescopica.jpg";
               description="Encuentra lo que buscas en nuestra gama de productos de calidad."
               :action="[
                 {
-                  route: './productos',
+                  route: './productosall',
                   label: 'Productos',
                 },
               ]"
