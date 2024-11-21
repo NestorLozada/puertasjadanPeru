@@ -15,20 +15,19 @@ import imgTest2 from "@/assets/logos/puertaTelescopica.jpg";
             <RotatingCardFront
               :image="imgTest"
               icon="touch_app"
-              title="Puerta <br /> Plegable"
-              description="All the Bootstrap components that you need in a development have been
-        re-design with the new look."
+              title="Productos de <br /> alta gama"
+              description="Nuestros productos son de la más alta calidad, ideal para todo tipo de ambiente
+              y para todo tipo de uso."
             />
 
             <RotatingCardBack
               :image="imgTest2"
               title="Descubre más"
-              description="You will save a lot of time going from prototyping to full-functional
-                code because all elements are implemented."
+              description="Encuentra lo que buscas en nuestra gama de productos de calidad."
               :action="[
                 {
-                  route: './/sections/page-sections/hero-sections.html',
-                  label: 'Start with Headers',
+                  route: './productos',
+                  label: 'Productos',
                 },
               ]"
             />
