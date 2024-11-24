@@ -37,31 +37,29 @@ import imgTest2 from "@/assets/logos/puertaTelescopica.jpg";
           <div class="row justify-content-start">
             <DefaultInfoCard
               icon="content_copy"
-              title="Full Documentation"
-              description="Built by developers for developers. Check the foundation and
-                  you will find everything inside our documentation."
+              title="Innovacion"
+              description="Innova en tu negocio con soluciones que brindan seguridad
+              y mantienen la elegancia, capturando la atención de tus clientes desde el primer momento."
             />
             <DefaultInfoCard
-              icon="flip_to_front"
-              title="Bootstrap 5 Ready"
-              description="The world’s most popular front-end open source toolkit,
-                  featuring Sass variables and mixins."
+              icon="security"
+              title="Seguridad"
+              description="Nuestras puertas y sistemas automáticos ofrecen máxima seguridad y prevención de riesgos, brindando protección confiable para cada espacio."
             />
           </div>
           <div class="row justify-content-start mt-5">
             <DefaultInfoCard
               class="mt-3"
               icon="price_change"
-              title="Save Time & Money"
-              description="Creating your design from scratch with dedicated designers can
-                be very expensive. Start with our Design System."
+              title="Invierte en lo mejor"
+              description="Somos líderes en nuestro sector, enfocados en satisfacer
+               las necesidades de nuestros clientes y comprometidos a garantizar su total satisfacción."
             />
             <DefaultInfoCard
               class="mt-3"
-              icon="devices"
-              title="Fully Responsive"
-              description="Regardless of the screen size, the website content will
-                  naturally fit the given resolution."
+              icon="people"
+              title="Personal altamente capacitado"
+              description="Nuestro personal está completamente capacitado para manejar situaciones de alto estrés, garantizando siempre la calidad y la eficiencia."
             />
           </div>
         </div>
