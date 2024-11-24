@@ -13,6 +13,7 @@ import PuertaFlipFlowView from "../layouts/sections/page-sections/features/FlipF
 import PuertaGiratoriaView from "../layouts/sections/page-sections/features/GiratoriaView.vue";
 import PuertaPlegableView from "../layouts/sections/page-sections/features/PlegableView.vue";
 import PuertaTelescopicaView from "../layouts/sections/page-sections/features/TelescopicaView.vue";
+import TodoslosProductos from "../views/Presentation/Sections/TodoslosProductos.vue";
 
 import NavigationNavTabs from "../layouts/sections/navigation/nav-tabs/NavTabsView.vue";
 import NavigationPagination from "../layouts/sections/navigation/pagination/PaginationView.vue";
@@ -62,6 +63,11 @@ const router = createRouter({
       path: "/productos",
       name: "page-headers",
       component: PageHeaders,
+    },
+    {
+      path: "/todoslosproductos",
+      name: "productos",
+      component: TodoslosProductos,
     },
     {
       path: "/productos/puerta-hermetica",

@@ -11,7 +11,6 @@ import Header from "../../examples/Header.vue";
 
 // sections
 import PresentationCounter from "./Sections/PresentationCounter.vue";
-import PresentationPages from "./Sections/PresentationPages.vue";
 import PresentationExample from "./Sections/PresentationExample.vue";
 import data from "./Sections/Data/designBlocksData";
 import PresentationInformation from "./Sections/PresentationInformation.vue";
@@ -68,7 +67,6 @@ onUnmounted(() => {
     <PresentationCounter />
     <PresentationInformation />
     <PresentationExample :data="data" />
-    <PresentationPages />
 
     <div
       class="container-fluid mt-sm-5 border-radius-xl"

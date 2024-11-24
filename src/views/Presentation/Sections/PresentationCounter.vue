@@ -11,9 +11,9 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
             <div class="col-md-4 position-relative">
               <DefaultCounterCard
                 color="success"
-                title="Coded Elements"
-                description="From buttons, to inputs, navbars, alerts or cards, you are
-                  covered"
+                title="Puertas operando"
+                description="Contamos con una gran cantidad de puertas operando al rededor del Ecuador
+                "
                 :count="70"
                 suffix="+"
                 :duration="3000"
@@ -23,9 +23,9 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
             <div class="col-md-4 position-relative">
               <DefaultCounterCard
                 color="success"
-                title="Design Blocks"
-                description="Mix the sections, change the colors and unleash your
-                  creativity"
+                title="Clientes"
+                description="Nuestros clientes avalan la calidad de nuestro trabajo, respaldando 
+                  cada proyecto con su satisfacción y confianza."
                 :count="15"
                 suffix="+"
                 :duration="3000"
@@ -35,10 +35,10 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
             <div class="col-md-4">
               <DefaultCounterCard
                 color="success"
-                title="Pages"
-                description="Save 3-4 weeks of work when you use our pre-made pages for
-                  your website"
-                :count="4"
+                title="Variedad de puertas"
+                description="Ofrecemos una amplia variedad de puertas
+                con especificaciones y características que se adaptan a sus necesidades"
+                :count="7"
                 :duration="3000"
               />
             </div>
