@@ -1,5 +1,6 @@
 <script setup>
-import { onMounted } from "vue";
+import { ref, onMounted } from "vue";
+import emailjs from "emailjs-com";
 
 //example components
 import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
@@ -7,14 +8,47 @@ import DefaultFooter from "@/examples/footers/FooterDefault.vue";
 
 //material components
 import MaterialInput from "@/components/MaterialInput.vue";
-import MaterialTextArea from "@/components/MaterialTextArea.vue";
+//import MaterialTextArea from "@/components/MaterialTextArea.vue";
 import MaterialButton from "@/components/MaterialButton.vue";
 
 // material-input
 import setMaterialInput from "@/assets/js/material-input";
+const name = ref("");
+const email = ref("");
+const message = ref("");
+
 onMounted(() => {
   setMaterialInput();
 });
+const sendEmail = () => {
+  console.log("Valores antes de enviar:", {
+    name: name.value,
+    email: email.value,
+    message: message.value,
+  });
+  const templateParams = {
+    name: name.value,
+    email: email.value,
+    message: message.value,
+  };
+  emailjs
+    .send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      templateParams,
+      import.meta.env.VITE_EMAILJS_USER_ID
+    )
+    .then(
+      (response) => {
+        console.log("Correo enviado exitosamente:", response);
+        alert("Correo enviado exitosamente");
+      },
+      (error) => {
+        console.error("Error al enviar correo:", error);
+        alert("Hubo un error al enviar el correo");
+      }
+    );
+};
 </script>
 <template>
   <div class="container position-sticky z-index-sticky top-0">
@@ -44,7 +78,7 @@ onMounted(() => {
               <div
                 class="bg-gradient-success shadow-success border-radius-lg p-3"
               >
-                <h3 class="text-white text-success mb-0">Contact us</h3>
+                <h3 class="text-white text-success mb-0">Contactanos</h3>
               </div>
             </div>
             <div class="card-body">
@@ -57,6 +91,7 @@ onMounted(() => {
                   <div class="row">
                     <div class="col-md-6">
                       <MaterialInput
+                        v-model="name"
                         class="input-group-static mb-4"
                         type="text"
                         label="Nombre Completo"
@@ -65,6 +100,7 @@ onMounted(() => {
                     </div>
                     <div class="col-md-6 ps-md-2">
                       <MaterialInput
+                        v-model="email"
                         class="input-group-static mb-4"
                         type="email"
                         label="Email"
@@ -73,13 +109,12 @@ onMounted(() => {
                     </div>
                   </div>
                   <div class="form-group mb-0 mt-md-0 mt-4">
-                    <MaterialTextArea
-                      id="message"
-                      class="input-group-static mb-4"
-                      :rows="6"
-                      placeholder="Describe your problem in at least 250 characters"
-                      >¿Como podermos ayudarte?
-                    </MaterialTextArea>
+                    <textarea
+                      v-model="message"
+                      class="form-control"
+                      placeholder="Describe tu problema en al menos 250 caracteres"
+                      rows="6"
+                    ></textarea>
                   </div>
                   <div class="row">
                     <div class="col-md-12 text-center">
@@ -87,8 +122,10 @@ onMounted(() => {
                         variant="gradient"
                         color="success"
                         class="mt-3 mb-0"
-                        >Enviar mensaje</MaterialButton
+                        @click.prevent="sendEmail"
                       >
+                        Enviar mensaje
+                      </MaterialButton>
                     </div>
                   </div>
                 </div>

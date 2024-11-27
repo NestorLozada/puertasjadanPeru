@@ -16,7 +16,8 @@ defineProps({
       class: "",
     }),
   },
-  value: {
+  modelValue: {
+    // Prop que se usa con v-model
     type: String,
     default: "",
   },
@@ -53,6 +54,9 @@ defineProps({
     default: "",
   },
 });
+
+defineEmits(["update:modelValue"]); // Declara el evento para actualizar el valor
+
 function getClasses(size, success, error) {
   let sizeValue, isValidValue;
 
@@ -69,23 +73,30 @@ function getClasses(size, success, error) {
   return `${sizeValue} ${isValidValue}`;
 }
 </script>
+
 <template>
   <div class="input-group">
+    <!-- Etiqueta del input -->
     <label v-if="label" :class="label.class">{{
       typeof label == "string" ? label : label.text
     }}</label>
-    <span v-if="icon" class="input-group-text"
-      ><i class="fas" :class="`fa-${icon}`" aria-hidden="true"></i
-    ></span>
+
+    <!-- Ícono (si existe) -->
+    <span v-if="icon" class="input-group-text">
+      <i class="fas" :class="`fa-${icon}`" aria-hidden="true"></i>
+    </span>
+
+    <!-- Input -->
     <input
       :id="id"
       :type="type"
       class="form-control"
       :class="[getClasses(size, success, error), inputClass]"
-      :value="value"
       :placeholder="placeholder"
-      :isRequired="isRequired"
+      :required="isRequired"
       :disabled="isDisabled"
+      :value="modelValue"
+      @input="$emit('update:modelValue', $event.target.value)"
     />
   </div>
 </template>

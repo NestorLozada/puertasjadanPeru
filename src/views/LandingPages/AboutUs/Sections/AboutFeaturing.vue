@@ -10,7 +10,7 @@ import DefaultCounterCard from "../../../../examples/cards/counterCards/DefaultC
           <DefaultCounterCard
             title="Clientes"
             description="Nuestros clientes garantizan nuestra calidad"
-            :count="5234"
+            :count="15"
             :duration="3000"
           />
         </div>
@@ -18,7 +18,7 @@ import DefaultCounterCard from "../../../../examples/cards/counterCards/DefaultC
           <DefaultCounterCard
             title="Proyectos"
             description="Proyectos operando al 100% y sin problema"
-            :count="3400"
+            :count="70"
             suffix="+"
             :duration="3000"
           />
