@@ -27,22 +27,22 @@ defineProps({
       },
     ],
   },
-  links: {
-    type: Array,
-    name: String,
-    href: String,
-    default: () => [
-      { href: "https://www.creative-tim.com/", name: "Company" },
-      { href: "https://www.creative-tim.com/presentation", name: "About Us" },
-      { href: "https://www.creative-tim.com/presentation", name: "Team" },
-      {
-        href: "https://www.creative-tim.com/templates/vuejs",
-        name: "Products",
-      },
-      { href: "https://www.creative-tim.com/blog", name: "Blog" },
-      { href: "https://www.creative-tim.com/license", name: "License" },
-    ],
-  },
+  // links: {
+  //   type: Array,
+  //   name: String,
+  //   href: String,
+  //   default: () => [
+  //     { href: "https://www.creative-tim.com/", name: "Company" },
+  //     { href: "https://www.creative-tim.com/presentation", name: "About Us" },
+  //     { href: "https://www.creative-tim.com/presentation", name: "Team" },
+  //     {
+  //       href: "https://www.creative-tim.com/templates/vuejs",
+  //       name: "Products",
+  //     },
+  //     { href: "https://www.creative-tim.com/blog", name: "Blog" },
+  //     { href: "https://www.creative-tim.com/license", name: "License" },
+  //   ],
+  // },
 });
 </script>
 <template>
